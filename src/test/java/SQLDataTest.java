@@ -30,9 +30,9 @@ public class SQLDataTest {
         int cols = rsmd.getColumnCount();
 */
         while (rs.next()) {
-            firstNameInput.setValue(rs.getString(2));
-            lastNameInput.setValue(rs.getString(3));
-            numberInput.setValue(rs.getString(4));
+            firstNameInput.setValue(rs.getString("firstName"));
+            lastNameInput.setValue(rs.getString("lastName"));
+            numberInput.setValue(rs.getString("phone"));
         }
 
         }
